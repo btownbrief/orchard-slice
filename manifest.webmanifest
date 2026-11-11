@@ -1,0 +1,17 @@
+{
+  "name": "Orchard Slice",
+  "short_name": "Orchard Slice",
+  "description": "A fruit-slicing arcade game in a Vermont apple orchard at golden hour.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#2a1f5c",
+  "theme_color": "#2a1f5c",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

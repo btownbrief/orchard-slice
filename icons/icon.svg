@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1f5c"/><stop offset=".45" stop-color="#c4527c"/><stop offset=".8" stop-color="#f5944f"/><stop offset="1" stop-color="#ffd98a"/></linearGradient>
+    <radialGradient id="ap" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#ff8a74"/><stop offset=".35" stop-color="#e0352f"/><stop offset="1" stop-color="#8d1426"/></radialGradient>
+    <radialGradient id="fl" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#fffdf0"/><stop offset="1" stop-color="#f1dfae"/></radialGradient>
+    <linearGradient id="bl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".2" stop-color="#fff"/><stop offset=".8" stop-color="#ffe6a0"/><stop offset="1" stop-color="#ffd270" stop-opacity="0"/></linearGradient>
+    <clipPath id="r"><rect width="512" height="512" rx="112"/></clipPath>
+    <path id="apple" d="M256 150C292 118 392 124 392 256C392 360 330 410 276 402Q256 396 236 402C182 410 120 360 120 256C120 124 220 118 256 150Z"/>
+    <clipPath id="L"><polygon points="0,0 512,0 512,236 0,336"/></clipPath>
+    <clipPath id="U"><polygon points="0,336 512,236 512,512 0,512"/></clipPath>
+    <filter id="g"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <g clip-path="url(#r)">
+    <rect width="512" height="512" fill="url(#sky)"/>
+    <circle cx="256" cy="300" r="190" fill="#ffe9a0" opacity=".28"/>
+    <g clip-path="url(#L)" transform="translate(-6,-12)">
+      <use href="#apple" fill="url(#ap)" stroke="#3a0a14" stroke-width="12" stroke-linejoin="round"/>
+      <path d="M262 150 Q262 104 292 78" stroke="#4a2a14" stroke-width="16" stroke-linecap="round" fill="none"/>
+      <path d="M270 110 C300 60 360 66 380 96 C350 130 300 128 270 110Z" fill="#6cc044" stroke="#1f4a18" stroke-width="9" stroke-linejoin="round"/>
+      <ellipse cx="190" cy="214" rx="26" ry="14" transform="rotate(-35 190 214)" fill="#fff" opacity=".55"/>
+    </g>
+    <g clip-path="url(#U)" transform="translate(8,16)">
+      <use href="#apple" fill="#e0352f" stroke="#3a0a14" stroke-width="12" stroke-linejoin="round"/>
+      <g transform="translate(256 256) scale(.9) translate(-256 -256)"><use href="#apple" fill="url(#fl)"/></g>
+      <ellipse cx="256" cy="320" rx="24" ry="52" fill="#efe4aa" stroke="#b39651" stroke-width="7"/>
+      <ellipse cx="244" cy="318" rx="8" ry="14" fill="#2f180b"/><ellipse cx="268" cy="318" rx="8" ry="14" fill="#2f180b"/>
+    </g>
+    <line x1="30" y1="352" x2="482" y2="226" stroke="#ffd270" stroke-width="30" stroke-linecap="round" filter="url(#g)" opacity=".9"/>
+    <line x1="30" y1="352" x2="482" y2="226" stroke="url(#bl)" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>
